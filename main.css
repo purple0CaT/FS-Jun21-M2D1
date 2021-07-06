@@ -81,6 +81,7 @@ img{
 /* FOOTER */
 footer {
     background-color: #17a2b8;
+    bottom: 0;
 }
 footer p {
     margin: 0;
@@ -98,4 +99,14 @@ footer a:hover{
     border-bottom: 1px solid black;
     transition: 0.3s;
         /* box-shadow: 0 1PX 1PX rgb(147, 147, 147); */
+}
+
+
+.padding-0{
+    padding-right:0;
+    padding-left:0;
+}
+
+.down-pad{
+    margin: 10px 0;
 }
