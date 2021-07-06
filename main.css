@@ -27,7 +27,7 @@ body {
          /* ALBUM TAB */
 .album{
     border: 1px solid rgb(226, 226, 226);
-    box-shadow: 0 4px 10px rgb(122, 122, 122);
+    box-shadow: 0 1px 5px rgb(122, 122, 122);
     padding: 1px;
 }
 .album h3{
@@ -48,12 +48,18 @@ body {
     text-decoration: none;
     color: rgb(24, 74, 47);
     margin: 10px 0;
+    border-radius: 3px;
     
+}
+.album a:hover{
+    background-color: rgb(125, 125, 125);
+    color: white;
+    transition: 0.5s;
 }
 
 .album:hover{
     box-shadow: 1px 1px 15px rgb(80, 80, 80);
-    transition: 0.5s;
+    transition: 0.3s;
 }
 /* NAVIGATION */
 .nav-link{
