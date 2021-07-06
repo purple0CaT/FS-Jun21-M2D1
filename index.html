@@ -29,44 +29,15 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
     />
     <title>Favorite</title>
     <!-- IMPORT ALL THE BOOTSTRAP RELATED CSS & SCRIPTS-->
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&amp;display=swap" rel="stylesheet">
-    <style>
-    /* EXERCISE 1
-            For every Album we'd like to have a consistent style.
-            Create a class for:
-            - The album container
-            - The album cover
-            - The album title
-            - The album group / singer / dj
-            - The album genre
-            - The album duration
-            - etc
+    
+    <link rel="stylesheet" href="main.css">
 
-            to make sure you give every album the same consistent appearance.
-         */
-*, *::after, *::before {
-    box-sizing: border-box;
-}
-body {
-    margin: 0;
-    width: 100%;
-    height: 100vh;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1em;
-}
 
-.nav-link{
-    color: white;
-}
-.nav-link:hover{
-    color: white;
-}
 
-.intro {
-    border-bottom: 1px solid black;
-}
-    </style>
 </head>
 <body>
 
@@ -82,6 +53,8 @@ body {
                 <a class="nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Hall of shame</a>
             </div>
         </nav>
+
+
         <div class="container">
             <div class="tab-content" id="nav-tabContent">
                 <!-- HOME TAB -->
@@ -89,27 +62,24 @@ body {
                     <div class="row justify-content-center my-3 text-center" >
                         <div class="col-12 intro">
                             <h1>Hello, I'm Istvan</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, natus? Dolore repellat labore facere voluptas, animi nobis neque nostrum alias eligendi, et consectetur pariatur numquam aliquid quidem in, maxime doloribus?</p></div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, natus? Dolore repellat labore facere voluptas, animi nobis neque nostrum alias eligendi, et consectetur pariatur numquam aliquid quidem in, maxime doloribus?</p>
+                        </div>
                     <!-- Rewiew -->
                     
                     <div class="row">
-                        <div class="col-12 text-center my-5 intro"><h3>Last Album Rewiew</h3>
+                        <div class="col-12 text-center my-5"><h3>Last Album Rewiew</h3>
                             
-                            <div class="card" style="width: 20rem">
-                                <img class="card-img-top" src="https://picsum.photos/150/150" alt="Card image cap">
-                                <div class="card-body">
-                                    <h4 class="card-title">My number</h4>
-                                    <h5 class="card-text">Foals</h5>
-                                </div>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Duration: 3:58 min</li>
-                                    <li class="list-group-item">Genre: Rock, ‎Funk rock‎</li>
-                                    <li class="list-group-item">Album: Holy Fire</li>
-                                    <li class="list-group-item">Tracklist: 3</li>
+                            <div class="album" style="width: 20rem">
+                                <img class="card-img-top" src="https://i.scdn.co/image/ab67616d00001e028b04dacf186124a62bc667a7" alt="Card image cap">
+                                    <h3 class="card-title">Holy Fire</h3>
+                                    <h4 class="card-text">Foals</h4>
+                                    <hr>
+                                <ul>
+                                    <li>Duration: 1h 27min</li>
+                                    <li>Genre: Rock, ‎Funk rock‎</li>
+                                    <li>Tracklist: 18</li>
                                 </ul>
-                                <div class="card-body">
-                                    <a href="https://open.spotify.com/album/6SBkXTPlJ3oEaFwRm5o2lD" class="card-link">Listen on Spotify</a>
-                                </div>
+                                <a href="https://open.spotify.com/album/6SBkXTPlJ3oEaFwRm5o2lD" >Listen on Spotify</a>
                             </div>
                         </div>
                     </div>
@@ -117,8 +87,8 @@ body {
             </div>
 
                 <!-- TOP ALBUMS -->
-                <div class="row tab-pane fade my-3" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-
+                <div class="row tab-pane fade my-3 text-center" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                    <h2>My top albums</h2>
                     <div class="row text-center">
                         <div class="col-6 col-sm-4 col-lg-3">12</div>
                         <div class="col-6 col-sm-4 col-lg-3">12</div>
@@ -134,11 +104,32 @@ body {
                     </div>
                 </div>
                 <!-- WORST ALBUMS -->
-                <div class="row tab-pane fade my-3" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+                <div class="row tab-pane fade my-3 text-center" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                    <h2>The Hall of Shame</h2>
+                    <div class="row text-center my-3">
+                        <div class="col-6 col-sm-4 col-lg-3">
+                            <div class="album">
+                                <img class="card-img-top" src="https://i.scdn.co/image/ab67616d00001e02e99c9f319300912a0e88bcea" alt="Card image cap">
+                                    <h3 class="card-title">Pressed pills</h3>
+                                    <h4 class="card-text">Yung Frown</h4>
+                                    <hr>
+                                <ul>
+                                    <li>Duration: 37min</li>
+                                    <li>Genre: --</li>
+                                    <li>Tracklist: 16</li>
+                                </ul>
+                                <a href="https://open.spotify.com/album/6SBkXTPlJ3oEaFwRm5o2lD" >Listen on Spotify</a>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-lg-3">12</div>
+                        <div class="col-6 col-sm-4 col-lg-3">12</div>
+                        <div class="col-6 col-sm-4 col-lg-3">12</div>
+                    </div>
+                </div>
             </div>
             
         </div>
-    <!-- EXERCISE 3
+    <!-- +++   EXERCISE 3
             Create a responsive section for your favourite albums.
             In this section you should have:
             - 4 albums per row when the screen is very large
@@ -146,7 +137,7 @@ body {
             - 2 albums per row when you are on a small screen
         -->
 
-    <!-- EXERCISE 4
+    <!-- +++   EXERCISE 4
             Create a section for the album reviews.
             Pick one of your fav albums, and create a section with:
             - Cover
